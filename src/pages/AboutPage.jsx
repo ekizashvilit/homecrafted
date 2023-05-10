@@ -14,7 +14,7 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Welcome to our furniture store! Our mission is to offer high-quality
+            Welcome to homecrafted! Our mission is to offer high-quality
             furniture at affordable prices to help make your home reflect your
             unique style. Our pieces are not only functional and comfortable,
             but also beautiful and stylish. We offer a wide selection of
