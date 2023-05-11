@@ -10,11 +10,16 @@ const Contact = () => {
             Stay up-to-date with our latest collections and promotions, and
             enjoy exclusive discounts by subscribing to our newsletter today.
           </p>
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            action="https://formspree.io/f/mgebqveg"
+            method="POST"
+          >
             <input
               type="email"
               className="form-input"
               placeholder="enter email"
+              name="_replyto"
             />
             <button type="submit" className="submit-btn">
               subscribe
