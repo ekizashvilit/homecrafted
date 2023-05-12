@@ -10,6 +10,9 @@ import Contact from './Contact';
 import Loading from './Loading';
 import Error from './Error';
 import Product from './Product';
+import ProductImages from './ProductImages';
+import Stars from './Stars';
+import AddToCart from './AddToCart';
 
 export {
   Navbar,
@@ -24,4 +27,7 @@ export {
   Loading,
   Error,
   Product,
+  ProductImages,
+  Stars,
+  AddToCart,
 };
