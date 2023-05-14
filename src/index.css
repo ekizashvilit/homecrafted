@@ -204,3 +204,7 @@ p {
 .page {
   min-height: calc(100vh - (20vh + 13rem));
 }
+
+.loading-height {
+  min-height: calc(100vh - 13rem);
+}
