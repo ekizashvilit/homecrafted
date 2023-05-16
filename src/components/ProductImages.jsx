@@ -52,7 +52,7 @@ const Wrapper = styled.section`
     box-shadow: 0px 0px 0px 2px var(--clr-primary-5);
   }
 
-  @media (min-width: 576px) {
+  @media (max-width: 576px) {
     .main {
       height: 300px;
     }
