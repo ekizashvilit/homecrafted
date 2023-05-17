@@ -57,6 +57,23 @@ const Filters = () => {
               })}
             </div>
           </div>
+          <div className="form-control">
+            <h5>company</h5>
+            <select
+              name="company"
+              value={company}
+              onChange={updateFilters}
+              className="company"
+            >
+              {companies.map((c, index) => {
+                return (
+                  <option value={c} key={index}>
+                    {c}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
         </form>
       </div>
     </Wrapper>
@@ -106,6 +123,7 @@ const Wrapper = styled.section`
     border-radius: var(--radius);
     border-color: transparent;
     padding: 0.25rem;
+    font-family: inherit;
   }
 
   .colors {
