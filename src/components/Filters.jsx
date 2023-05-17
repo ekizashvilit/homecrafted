@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useFilterContext } from '../context/filter_context';
-import { getUniqueValues } from '../utils/helpers';
+import { formatPrice, getUniqueValues } from '../utils/helpers';
 import { FaCheck } from 'react-icons/fa';
 
 const Filters = () => {
@@ -107,6 +107,18 @@ const Filters = () => {
                 );
               })}
             </div>
+          </div>
+          <div className="form-control">
+            <h5>price</h5>
+            <p className="price">{formatPrice(price)}</p>
+            <input
+              type="range"
+              name="price"
+              onChange={updateFilters}
+              min={min_price}
+              max={max_price}
+              value={price}
+            />
           </div>
         </form>
       </div>
