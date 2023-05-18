@@ -76,6 +76,32 @@ const filter_reducer = (state, action) => {
       });
     }
 
+    if (category !== 'all') {
+      tempProducts = tempProducts.filter(
+        (product) => product.category === category
+      );
+    }
+
+    if (company !== 'all') {
+      tempProducts = tempProducts.filter(
+        (product) => product.company === company
+      );
+    }
+
+    if (color !== 'all') {
+      tempProducts = tempProducts.filter((product) =>
+        product.colors.find((c) => c === color)
+      );
+    }
+
+    if (shipping) {
+      tempProducts = tempProducts.filter(
+        (product) => product.shipping === true
+      );
+    }
+
+    tempProducts = tempProducts.filter((product) => product.price <= price);
+
     return { ...state, filtered_products: tempProducts };
   }
 
