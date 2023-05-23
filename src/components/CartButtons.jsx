@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import { FaShoppingCart, FaUserPlus } from 'react-icons/fa';
 import { useProductsContext } from '../context/products_context';
 import { useCartContext } from '../context/cart_context';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const CartButtons = () => {
   const { closeSidebar } = useProductsContext();
   const { total_items } = useCartContext();
+  const { loginWithRedirect } = useAuth0();
 
   return (
     <Wrapper className="cart-btn-wrapper">
@@ -17,7 +19,7 @@ const CartButtons = () => {
           <span className="cart-value">{total_items}</span>
         </span>
       </Link>
-      <button className="auth-btn">
+      <button className="auth-btn" onClick={() => loginWithRedirect()}>
         Login
         <FaUserPlus />
       </button>
