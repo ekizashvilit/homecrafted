@@ -38,6 +38,10 @@ const Wrapper = styled.main`
       text-transform: none;
     }
   }
+
+  .btn {
+    margin-top: 1rem;
+  }
 `;
 
 export default CartPage;
