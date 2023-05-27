@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import heroBcg from '../assets/hero-bcg.jpeg';
-import heroBcg2 from '../assets/hero-bcg-2.jpeg';
+import heroBcg from '../assets/hero-bcg.jpg';
+import heroBcg2 from '../assets/hero-bcg-2.jpg';
 
 const Hero = () => {
   return (
